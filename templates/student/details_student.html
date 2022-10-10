@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block title %}Details {{ student.first_name }} {{ student.last_name }}{% endblock %}
+{% block content %}
+    <div class="container-xxl">
+        <div class="card text-bg-dark mb-r">
+            <div class="card-header text-center"><h3>Student</h3></div>
+            <div class="card-body">
+
+                    <p class="card-title"> Name: {{ student.first_name }} {{ student.last_name }}</p>
+                    <p class="card-title"> Age: {{ student.age }} </p>
+                    <p class="card-title"> Gender: {{ student.gender }} </p>
+                    <p class="card-title"> Start Date: {{ student.start_date }} </p>
+                    <p class="card-title"> End Date: {{ student.end_date }} </p>
+
+
+                <div class="card-footer text-center">
+                    <p><a href="{% url 'list_of_students' %}" class="btn-primary">Cancel</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,8 @@
+.text-red  {
+    color: darkred;
+}
+
+.errorlist {
+    color: #ff0066;
+    list-style-type: none;
+}
